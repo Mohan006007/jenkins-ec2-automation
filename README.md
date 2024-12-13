@@ -21,6 +21,13 @@ This repository, **jenkins-ec2-automation**, demonstrates the setup and basic us
      - **Item Roles**: Full access for developers, testers, and production support.  
    - Assigned roles to corresponding users.  
 
+## Plugins Used
+
+- **Role-based Authorization Strategy**: For managing user roles and permissions in Jenkins.  
+- **Pipeline**: For creating and executing Jenkins pipeline jobs.  
+- **Git**: For integrating with Git repositories in Jenkins.  
+- **Job DSL**: For creating jobs programmatically.  
+
 ## Screenshots
 
 - `ec2-server.png`: Jenkins server running on EC2.  
@@ -34,13 +41,19 @@ This repository, **jenkins-ec2-automation**, demonstrates the setup and basic us
 ## How to Reproduce
 
 1. Launch an EC2 instance and set up Jenkins.  
-2. Create the described projects and verify their outputs.  
-3. Manage users and roles via **Manage Jenkins > Configure Global Security**.  
+2. Install the required plugins:  
+   - Role-based Authorization Strategy  
+   - Pipeline  
+   - Git  
+   - Job DSL  
+3. Create the described projects and verify their outputs.  
+4. Manage users and roles via **Manage Jenkins > Configure Global Security**.  
 
 ## Purpose
 
 This repository is intended for beginners to understand:  
 - Basic Jenkins setup and project execution.  
 - Role-based access control configuration.  
+- Usage of essential Jenkins plugins for automation and project management.
 
 Feel free to fork, explore, and enhance the tasks as part of your Jenkins learning journey!
